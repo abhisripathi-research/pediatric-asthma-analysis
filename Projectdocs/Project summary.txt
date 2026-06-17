@@ -1,0 +1,13 @@
+This project examines pediatric asthma hospitalizations across Texas counties during 2019, prior to the COVID-19 pandemic.
+
+The Texas Department of State Health Services (DSHS) provides public information on chronic diseases through the Texas Health Data Portal, including county-level asthma hospitalization rates. However, the dashboard does not provide age-specific hospitalization data and does not allow access to the underlying patient-level records needed for pediatric asthma analyses.
+
+Source: https://healthdata.dshs.texas.gov/dashboard/diseases/chronic-disease
+
+To address this limitation, I used the Texas Inpatient Public Use Data File (PUDF), a de-identified hospital discharge dataset maintained by DSHS. This dataset includes patient age, diagnosis codes, discharge year, and county information, enabling age-specific and geographic analyses that are not available through the public dashboard.
+
+Source: https://www.dshs.texas.gov/center-health-statistics/texas-health-care-information-collection/download-and-purchase-data/texas-inpatient-public-use-data-file-pudf/public-use-data-file-pudf-inpatient-free-download
+
+Using the inpatient PUDF, I identified pediatric hospitalizations (patients under 18 years of age) with a primary diagnosis of asthma (ICD-10 codes J45–J46). Hospitalization records were aggregated by county and quarter to examine geographic variation and seasonal patterns in pediatric asthma hospitalizations across Texas.
+
+Although the current analysis focuses on 2019 data, the same methodology can be extended to additional years of PUDF data to evaluate long-term trends in pediatric asthma hospitalizations before and after the COVID-19 pandemic.
